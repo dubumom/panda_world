@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>판다월드</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+  <!-- 기본, 공통서식 -->
+  <link href="./css/base.css" type="text/css" rel="stylesheet">
+
+  <!-- 레이아웃서식 -->
+  <link href="./css/layout.css" type="text/css" rel="stylesheet">
+
+  <!-- 콘텐츠 내용 서식 -->
+  <link href="./css/main.css" type="text/css" rel="stylesheet">
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" type="text/css" rel="stylesheet">
+
+  <!-- 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- css3속성 사용시 접두사 자동으로 붙여주는 스크립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 제이쿼리 ui라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- 제이쿼리 쿠키파일 -->
+  <script src="./script/jquery.cookie.js"></script>
+
+  <!-- 제이쿼리 공통 스크립트 -->
+  <script src="./script/layout.js"></script>
+
+  <!-- 콘텐츠 스크립트 -->
+  <script src="./script/main.js"></script>
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+  <!-- 헤더영역 시작 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+        <img src="./images/logo_w.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 상단 내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li class="underline"><a href="#intro" title="바오가족 소개">바오가족 소개</a></li>
+        <li class="underline"><a href="#test" title="사육사 소개">사육사 소개</a></li>
+        <li class="underline"><a href="#event" title="판다월드">판다월드</a></li>
+        <li class="underline"><a href="#buy" title="유튜브">유튜브</a></li>
+        <li class="underline"><a href="#cs" title="푸딩이 굿즈">푸딩이 굿즈</a></li>
+      </ul>
+    </nav>
+
+    <i class="fas fa-user"></i> <!-- 로그인 아이콘 -->
+    <i class="fas fa-bell"></i> <!-- 알람 아이콘-->
+  </header>
+
+  <!-- 원형내비게이션 -->
+  <nav id="m_nav">
+    <ul>
+      <li><img src="./images/hellow.png" alt=""><a href="#" title="소개">바오가족 소개</a></li>
+      <li><img src="./images/hellow.png" alt=""><a href="#" title="체험">사육사 소개</a></li>
+      <li><img src="./images/hellow.png" alt=""><a href="#" title="이벤트">판다 월드</a></li>
+      <li><img src="./images/hellow.png" alt=""><a href="#" title="구매">유튜브</a></li>
+      <li><img src="./images/hellow.png" alt=""><a href="#" title="고객지원">푸딩이 굿즈</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인영역 시작 -->
+  <main>
+    <section id="main_intro">
+      <h2>판다 인트로 영상콘텐츠</h2>
+      <article>
+        <h3>행복을 주는 바오가족</h3>
+        <p>우리곁에 다가 온 판다가족과 일상의 즐거움을 함께하세요</p>
+      </article>
+      <video autoplay muted loop='infinite'>
+        <source src="./movie/main.mp4" type="video/mp4">
+      </video>
+
+      <a href="#" title="아래로 이동" class="next_btn">
+        <img src="./images/b_arrow.svg" alt="" class="b_arrow">
+      </a>
+      
+    </section>
+
+    <section id="bao">
+      <h2>바오가족 소개</h2>
+      <p>사랑스러운 애버랜드의 판다 가족을 소개합니다.</p>
+
+      <div class="bao_bg">
+        <article id="bao_slide">
+          <div class="txt_box">
+            <div class="txt_box_inner">
+              <ul>
+                  <li class="txt_box_bg txt_box_01">
+                    <h3 class="name_tag tag01">푸바오</h3>
+                    <span>이름 의미 : 행복을 주는 보물</span>
+                    <span>성별: 암 컷 <img src="./images/w_icon.png" alt="" class="w_img"></span>
+                    <span>태어난 날 : 2020.07.20</span>
+                    <p>특징 : 대한민국에서 태어난<br> 최초의 판다에요.<br>이곳저곳을 돌아다니며<br>탐색을 즐기는 호기심 쟁이에요. </p>
+                  </li>
+                  <li class="txt_box_bg txt_box_02">
+                    <h3 class="name_tag tag02">아이바오</h3>
+                    <span>이름 의미 : 사랑을 주는 보물</span>
+                    <span>성별: 암 컷 <img src="./images/w_icon.png" alt="" class="w_img"></span>
+                    <span>태어난 날 : 2020.07.20</span>
+                    <p>특징 : 우아함이란 이런 것,<br> '예뻐예뻐'가 별명이에요!<br>푸바오와 쌍둥바오의 엄마로<br>육아의 달인이랍니다. </p>
+                  </li>
+                  <li class="txt_box_bg txt_box_03">
+                    <h3 class="name_tag tag03">러바오</h3>
+                    <span>이름 의미 : 기쁨을 주는 보물</span>
+                    <span>성별: 숫 컷 <img src="./images/m_icon.png" alt="" class="m_img"></span>
+                    <span>태어난 날 : 2020.07.20</span>
+                    <p>특징 : 사람을 좋아하는<br> 관종 판다에요.<br>특히 나무 타기를 좋아해서<br>어디든지 올라간답니다. </p>
+                  </li>
+                  <li class="txt_box_bg txt_box_04">
+                    <h3 class="name_tag tag04">쌍둥바오</h3>
+                    <span>아직 이름이 정해지지 않았어요!</span>
+                    <span>성별: 아직 알 수 없음.</span>
+                    <span>태어난 날 : 2023.07.07</span>
+                    <p>특징 : 대한민국에서 태어난<br> 최초의 쌍둥이 판다에요.<br>우량아로 태어나서 지금은<br>아이바오의 보살핌을 받고 있어요. </p>
+                  </li>
+              </ul>
+            </div> <!--//txt_box_inner-->
+          </div> <!--//txt_box-->
+          <div class="img_box">
+            <ul>
+              <li class="img img01"><img src="./images/name_pubao.png" alt="푸바오" ></li>
+              <li class="img img02"><img src="./images/name_ibao.png" alt="아이바오" ></li>
+              <li class="img img03"><img src="./images/name_lebao.png" alt="러바오" ></li>
+              <li class="img img04"><img src="./images/name_twins.png" alt="쌍둥바오" ></li>
+            </ul>
+          </div> <!--//img_box-->
+        </article>
+      </div>
+
+      <i class="fas fa-angle-left bao_btn"></i>
+      <a href="./images/more_btn_photo.jpg" class="more_btn02"><img src="./images/more_btn.png" alt=""></a>
+    </section>
+    
+    <section id="zookeeper">
+      <h2>사육사 소개</h2>
+      <p>바오가족을 사랑으로 돌보는 사육사를 소개합니다.</p>
+      <ul id="tab_con">
+        <li>
+          <span class="name n1 act02">강철원 사육사</span>
+          <div class="box box01">
+            <div class="z_text">
+              <h2>강철원 사육사</h2>
+              <span>별명 : 강바오, 삼신할배</span>
+              <p>우리나라 최초로 판다 번식 성공!<br>
+                동물을 사랑으로 대하는 따뜻함과 성실함으로
+                모두가 존경하는 사육사입니다.
+              </p>
+            </div>
+            <div class="z_photo">
+              <img src="./images/kagbao.png" alt="">
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="name n2">송영관 사육사</span>
+          <div class="box box02">
+            <div class="z_text">
+              <h2>송영관 사육사</h2>
+              <span>별명 : 송바오, 판다삼촌</span>
+              <p>못하는게 없는 만능 재주꾼<br>
+                판다 가족에게 무엇이든 만들어 선물하고,<br>
+                삼촌, 조카 캐미를 선보이는 사육사 입니다.
+              </p>
+            </div>
+            <div class="z_photo">
+              <img src="./images/songbao.png" alt="">
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="name n3">윤승희 수의사</span>
+          <div class="box box03">
+            <div class="z_text">
+              <h2>윤승희 수의사</h2>
+              <span>별명 : 닥터윤, 명의윤</span>
+              <p>수줍음 속에 카리스마<br>
+                동물들의 아픔을 이해하고 부드럽게 다가가는<br>
+                자타공인의 실력을 가진 수의사 입니다.
+              </p>
+            </div>
+            <div class="z_photo">
+              <img src="./images/ohbao.png" alt="">
+            </div>
+          </div>
+        </li>
+
+        <div class="z_bg bg_color01"></div>
+        <div class="z_bg bg_color02"></div>
+        <div class="z_bg bg_color03"></div>
+      </ul>
+    </section>
+
+    <section id="panda">
+      <h2>판다 월드</h2>
+      <p>환상의 나라 주토피아 속 판다월드를 소개합니다.</p>
+      <img src="./images/panda_intro.png" alt="" class="panda_txt_img">
+      <div class="panda_txt">
+        <h3>판다월드 소개</h3>
+        <p>동물들의 생태환경과 유사하게 자연친화적으로 조성된 판다가 살고 있는 집. 국내최초로 태어난 아기판다 '푸바오'를 만나러오세요!</p>
+        <dl>
+          <dt>이용안내</dt>
+          <dd>1) 스마트 줄서기로 운영되며 스마트 줄서기 신청 후 예약된 시간에<br>이용가능, 예약 마감 된 경우 이용이 불가합니다.</dd>
+          <dd>2) 스마트 줄서기로 운영되는 시설로 운영상황에 따라<br>현장 줄서기로 전환될 수 있습니다.</dd>
+          <dd>3) 현장줄서기로 전환될 경우 에버랜드 APP에서 확인할 수 있습니다.</dd>
+
+          <dt>유의사항</dt>
+          <dd>1) 판다들은 청각에 예민한 동물이므로판다월드 내에서는 큰소리로 대화를 삼가해주시기 바랍니다.</dd>
+          <dd>2) 동물의 건강 및 기타 상황에 따라 일부 동물은 전시하지 않을 수 있습니다.</dd>
+          <dd>3) 고객과 동물들의 안전을 위하여 보조견의 동반 이용이 제한될 수 있습니다.</dd>
+        </dl>
+        <a href="http://www.everland.com/web/everland/favorite/zonemap/zootopia/zoo32.html" target="_blank" class="arrow">약도보기</a>
+
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.0925065309243!2d127.20024217722236!3d37.292941339767104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b57baf827e2d7%3A0xbaa80b2cb9e2e8c5!2z7JeQ67KE656c65OcIO2MkOuLpOyblOuTnA!5e0!3m2!1sko!2skr!4v1691408189267!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="map_wrap">
+        <h3>에버랜드 판다월드 MAP</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 경기도 용인시 처인구 포곡읍 전대리519-21 위치: 에버랜드</p>
+        <p><i class="fa-solid fa-clock"></i> 매일 오전 10:00 ~ 오후 6:00</p>
+        <p><i class="fa-solid fa-link"></i> 공유하기</p>
+      </div>
+      <img src="./images/lemon.png" alt="레몬이" class="lemon">
+    </section>
+
+    <section id="youtube">
+      <h2>유튜브</h2>
+      <div class="youtube_wrap">
+        <h2>youtube</h2>
+        <p>에버랜드 사육사가 소개하는 바오가족의 영상을 살펴보세요.</p>
+        <img src="./images/family.png" alt="">
+
+        <div class="y_inner">
+          <div class="play p01 on">
+            <img src="./images/everandlogo.svg" alt="">
+            <h3>에버랜드 - 판다왔송</h3>
+            <p>송바오와 뚠빵이의 캐미로 일상의 즐거움을 선사합니다.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3na9epAAqdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/969p7lWqBxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="play p02">
+            <img src="./images/bbubbalogo.svg" alt="">
+            <h3>말하는 동물원 뿌빠TV</h3>
+            <p>판다 할아버지 강바오의 따뜻함으로 하루의 피곤함을 녹여드립니다.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yd_UpUBE5oY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/554pmIaz6xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+        </div> <!--//inner-->
+        <div class="btn_wrap">
+          <i class="fas fa-angle-left" id="l_btn"></i>
+          <i class="fas fa-angle-right" id="r_btn"></i>
+        </div> <!--//btn_wrap-->
+      </div> <!--//youtube_wrap-->
+
+
+    </section>
+
+    <section id="goods">
+      <h2>GOODS</h2>
+      <P>푸딩이들이 원하는 바로 그 굿즈를 확인하시고 구매해보세요.</P>
+      <article class="goods_icon">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./images/goods01.png" alt="">
+              <span>푸바오 우유키링</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods02.png" alt="">
+              <span>푸바오 골프 덮개 세트</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods03.png" alt="">
+              <span>귀염둥이 바오 우산</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods04.png" alt="">
+              <span>바오가족 머리띠</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods05.png" alt="">
+              <span>주토피아 반자동 비눗방울</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods06.png" alt="">
+              <span>사랑스러운 푸바오 인형</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods07.png" alt="">
+              <span>끌어안고 싶은 바디펠로우</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/goods08.png" alt="">
+              <span>푸바오와 함께 피크닉매트</span>
+              <div class="more_btn">자세히 보기 <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="banner">
+      <h2>이벤트</h2>
+      <article class="event_banner">
+        <h3 class="hidden">이벤트베너</h3>
+        <ul class="silde_wrap5">
+          <li>
+            <img src="./images/banner01.png" alt="베너1" class="e_img" id="random">
+          </li>
+          <li>
+            <img src="./images/banner02.png" alt="베너2" class="e_img" id="random">
+          </li>
+          <li>
+            <img src="./images/banner03.png" alt="배너3" class="e_img" id="random">
+          </li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./images/logo.png" alt="하단로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="이용약관">이용약관</a></li>
+          <li><a href="#" title="개인정보 처리방침">개인정보 처리방침</a></li>
+          <li><a href="#" title="저작권안내">저작권안내</a></li>
+          <li><a href="#" title="공동인증서 안내">공동인증서 안내</a></li>
+          <li><a href="#" title="판다월드 홈페이지">판다월드 홈페이지</a></li>
+        </ul>
+      </nav>
+      <address>
+        <dl>
+          <dt>사업자등록번호 :</dt>
+          <dd>101-00-00000</dd>
+          <dt>통신판매업신고번호 : </dt>
+          <dd>2022-012345</dd>
+          <dt>제작자 : </dt>
+          <dd>우예지</dd>
+          <dt>주소 : </dt>
+          <dd>인천부평구 장제로 45 현대더로프트 103동 713호</dd>
+          <dt>호스팅 서비스 제공 : </dt>
+          <dd>에버랜드(주)</dd>
+        </dl>
+        <p>copyright&copy;Samsung C&T Corporation. All rights reserved.</p>
+      </address>
+    </div>
+  </footer>
+
+  <!-- 스와이퍼 슬라이드 스크립트 -->
+  <script src="./script/swiper.js"></script>
+</body>
+</html>

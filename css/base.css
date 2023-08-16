@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HakgyoansimWoojuR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 모든 페이지에 공통으로 적용되는 서식 */
+:root{
+  --t-color01:#333;
+  --t-color02:#fff;
+  --bg-color01 : #fff;
+  --t-size12 : 12px;
+  --t-size14 : 14px;
+  --t-size16 : 16px;
+}
+
+body{
+  font-family: 'HakgyoansimWoojuR','맑은 고딕',sans-serif;
+  font-size:var(--t-size12);
+  color:var(--t-color01);
+  background:var(--bg-color01);
+  overflow-x:hidden;
+
+}
+a{
+  color:var(--t-color01);
+  text-decoration:none;
+  font-size:var(--t-size12);
+}
+.hidden {display: none;}
+
+/* 모달 서식 */
+.modal {
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  left: 0;top: 0;
+  z-index: 100000 ;
+  font-family: '맑은 고딕',serif;
+}
+.inner {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner a {}
+.inner a img {
+  display: block;
+  width: 400px; height: 400px;
+  object-fit: cover;
+}
+
+.inner p {
+  background: #FFF88B;
+  line-height: 40px;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+#ch {
+  display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #bcbcbc;
+	cursor: pointer;
+  padding-top: 4px;
+  position: relative;
+  left:2px; top: 3px;
+}
+#c_btn {
+  float: right;
+	border: 2px solid #bcbcbc;
+  padding: 2px 5px;
+  background: #fff;
+  position: absolute;
+  right: 10px; bottom: 7px;
+  font-size: 12px;
+  border-radius: 3px;
+} 
+.on {display: block !important;}
+.act02 {border-bottom: none !important;}
+
+#bao, #goods{
+  margin:80px auto;
+  width:1200px;height:800px;
+  /* background:#8ebce7; */
+}
+
